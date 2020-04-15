@@ -1,0 +1,28 @@
+{
+  "name": "koala",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon app.js",
+    "start:test": "PORT=3030 MONGODB_URL=‘mongodb://localhost/madlibs_test’ npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.4.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "jest": "^25.3.0",
+    "mongoose": "^5.9.9",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5"
+  }
+}
