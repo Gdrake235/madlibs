@@ -1,0 +1,10 @@
+doctype html
+html(lang='en')
+body
+  form(action='/stories/new', method='POST')
+    p
+      | title:
+      input(type='text', name='title', value='')
+      |          content:
+      input(type='text', name='content', value='')
+    input(type='submit', value='Submit')

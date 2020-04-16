@@ -2,6 +2,6 @@ doctype html
 html(lang='en')
   h1 stories
 
-ul
-  each story in stories
-    li: a(href=`/stories/${story.id}` class="title") #{story.title}
+  ul
+    each story in stories
+     li: a(href=`/stories/${story.id}` class="title") #{story.title}
