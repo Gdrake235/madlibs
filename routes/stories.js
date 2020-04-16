@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-/* var PostsController = require('../controllers/posts')
+var StoriesController = require('../controllers/stories')
 
-router.get('/', PostsController.Index);
-router.post('/', PostsController.Create);
-router.get('/new', PostsController.New); */
+router.get('/', StoriesController.Index);
+router.get('/:id', StoriesController.GetStory);
+router.post('/:id', StoriesController.CreateStory);
 
 module.exports = router;
