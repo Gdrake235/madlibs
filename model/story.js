@@ -4,8 +4,8 @@ var StorySchema = new mongoose.Schema({
   title: String,
   text: String,
   form: Array
+}); 
 
-})
-var Story = mongoose.model('Story', StorySchema)
-console.log(mongoose.connection.db);
-module.exports = Story
+var Story = mongoose.model('Story', StorySchema, "stories");
+
+module.exports = Story; 

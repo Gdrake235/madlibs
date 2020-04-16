@@ -4,4 +4,4 @@ html(lang='en')
 
 ul
   each story in stories
-    li= story.title
+    li: a(href=`/stories/${story.id}` class="title") #{story.title}

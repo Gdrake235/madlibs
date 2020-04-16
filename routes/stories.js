@@ -4,7 +4,7 @@ var router = express.Router();
 var StoriesController = require('../controllers/stories')
 
 router.get('/', StoriesController.Index);
-/* router.post('/', PostsController.Create);
-router.get('/new', PostsController.New); */
+router.get('/:id', StoriesController.GetStory);
+router.post('/:id', StoriesController.CreateStory);
 
 module.exports = router;

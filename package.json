@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "start": "nodemon app.js",
-    "start:test": "PORT=3030 MONGODB_URL=‘mongodb://localhost/madlibs_test’ npm start"
+    "start:test": "PORT=3030 MONGODB_URL='mongodb://localhost/madlibs_test' npm start",
+    "test:integration": "cypress run"
   },
   "author": "",
   "license": "ISC",
