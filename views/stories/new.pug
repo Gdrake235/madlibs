@@ -1,5 +1,7 @@
 doctype html
 html(lang='en')
+  block styles
+    link(rel="stylesheet" type="text/css" href="/style.css")  
 body
   form(action='/stories/new', method='POST')
     p

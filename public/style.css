@@ -1,0 +1,38 @@
+
+body {
+  background: #D5BBB1;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #19151c
+}
+
+
+h1{
+  text-align: center;
+    color: #19151c
+}
+
+body {
+  text-align: center;
+}
+
+
+table-wrapper {
+  display: flex;
+  text-align: center;
+
+}
+desc {
+  width: 5em;
+  border-collapse: collapse;
+  text-align: center;
+}
+tr {
+
+    text-align: center;
+
+    padding: 1em;
+  }
+td {
+  text-align: center;
+}
