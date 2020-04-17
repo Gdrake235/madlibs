@@ -4,7 +4,7 @@ body
   form(action='/stories/new', method='POST')
     p
       | title:
-      input(type='text', name='title', value='')
+      input(type='text', name='title', value='', required)
       |          content:
-      input(type='text', name='content', value='')
+      input(type='text', name='content', value='', required)
     input(type='submit', value='Submit')

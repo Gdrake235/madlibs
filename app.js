@@ -1,4 +1,4 @@
-var createError = require('http-errors');
+
 var http = require('http');
 var express = require('express');
 var path = require('path');
@@ -8,6 +8,7 @@ var pug = require('pug');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var debug = require('debug');
+var createError = require('http-errors');
 
 var homeRouter = require('./routes/home');
 var storiesRouter = require('./routes/stories');
@@ -57,7 +58,9 @@ app.set('port', port);
  * Connect to MongoDB
  **/
 
- var mongoDbUrl = process.env.MONGODB_URI || 'mongodb://localhost/madlibs';
+
+ var mongoDbUrl = process.env.MONGODB_URL || process.env.MONGODB_URI || 'mongodb://localhost/madlibs';
+
  mongoose.connect(mongoDbUrl, {
    useNewUrlParser: true,
    useUnifiedTopology: true
