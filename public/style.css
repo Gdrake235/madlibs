@@ -36,3 +36,27 @@ tr {
 td {
   text-align: center;
 }
+textarea {
+  /* box-sizing: padding-box; */
+  overflow:hidden;
+  /* demo only: */
+  padding:10px;
+  width:250px;
+  font-size:14px;
+  margin:50px auto;
+  display:block;
+  border-radius:10px;
+  border:6px solid #556677;
+}
+
+.submit_story_button {
+  background-color: rgb(255, 255, 255); /* Green */
+  border: none;
+  border-radius: 25px;
+  color: rgb(5, 5, 5);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
