@@ -58,7 +58,7 @@ app.set('port', port);
  * Connect to MongoDB
  **/
 
- var mongoDbUrl = process.env.MONGODB_URL || 'mongodb://localhost/madlibs';
+ var mongoDbUrl = process.env.MONGODB_URL|| MONGODB_URI || 'mongodb://localhost/madlibs';
  mongoose.connect(mongoDbUrl, {
    useNewUrlParser: true,
    useUnifiedTopology: true
