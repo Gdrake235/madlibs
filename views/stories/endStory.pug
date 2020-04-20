@@ -3,7 +3,15 @@ doctype html
 html(lang='en')
   block styles
     link(rel="stylesheet" type="text/css" href="/style.css")  
-h1 #{story.endStory}
+    link(rel="stylesheet" type="text/css" href="/navbar.css")
+
+h1 <div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/stories/new">Create</a>
+  <a href="/stories">Stories</a>
+  <a href="#about">About</a>
+</div>
+h2 #{story.endStory}
 
 
 <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fkoala-madlibs.herokuapp.com&layout=button&size=large&width=77&height=28&appId" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>

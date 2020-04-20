@@ -1,14 +1,22 @@
 doctype html
 html(lang='en')
   block styles
-    link(rel="stylesheet" type="text/css" href="/style.css")  
+    link(rel="stylesheet" type="text/css" href="/style.css") 
+    link(rel="stylesheet" type="text/css" href="/navbar.css")
+
+h1 <div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/stories/new">Create</a>
+  <a href="/stories">Stories</a>
+  <a href="#about">About</a>
+</div>
 body
-  h1 create a story
+  h1 <div class="create_header"> create a story </div>
   form(class='new_story_form',action='/stories/new', method='POST')
     p
 
       | title :
-      textarea(id='title_text',type='text', name='title', value='',required ) please input a title
+      textarea(id='title_text',type='text', name='title', value='', required ) "write a title"
       |       content :
       textarea(id='content_text',type='text', name='content', value='',cols='30',rows='20',required ) "I am a template i have [noun1], [noun2] but should never be the same"
     

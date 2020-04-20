@@ -1,8 +1,16 @@
 doctype html
 html(lang='en')
-  head
-    block styles
-      link(rel="stylesheet" type="text/css" href="/style.css")  
+  block styles
+   link(rel="stylesheet" type="text/css" href="/style.css")  
+   link(rel="stylesheet" type="text/css" href="/navbar.css")
+  
+h1 <div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/stories/new">Create</a>
+  <a href="/stories">Stories</a>
+  <a href="#about">About</a>
+</div>
+  head 
         
   body
   h1 Stories

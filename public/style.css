@@ -12,6 +12,15 @@ h1{
     color: #19151c
 }
 
+/* @font-face {
+  font-family: sushi;
+  src: url(Sushi-oZYo.otf);
+}
+
+.create_header {
+  font-family: sushi;
+} */
+
 body {
   text-align: center;
 }
