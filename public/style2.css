@@ -1,0 +1,106 @@
+
+
+.instructions {
+  font-style: sans-serif;
+  font-size: 20px;
+  margin: 0;
+  white-space: nowrap;
+  position: absolute;
+  top:50%;
+  left:1%;
+  right:900px;
+  margin-right:50%
+  transform: translate(-50%, -50%)
+}
+
+
+h2 {
+  font-style: sans-serif;
+  font-size: 40px;
+  margin: 0;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  right:1000px;
+  margin-right:50px;
+  transform: translate(-50%, -50%)
+  /*text-align: center;*/
+}
+ body {
+  background: #d5bbb1;
+  white-space: pre-wrap;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.box  {
+  background: white;
+  width: 200px;
+  height: 200px;
+  margin:auto;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+}
+.box2  {
+  background: white;
+  width: 200px;
+  height: 200px;
+  margin:auto;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+}
+
+.box3  {
+  background: white;
+  width: 200px;
+  height: 200px;
+  margin:auto;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+}
+.box3  {
+  background: white;
+  width: 200px;
+  height: 200px;
+  margin:auto;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+}
+@keyframes myanimation {
+  0% {background-color: #7366cc; border-radius: 0 0 0 0;}
+  25%{background-color: #ff89d9; border-radius: 50% 0 0 0;}
+  50%{background-color: #5ae293; border-radius: 50% 50% 0 0;}
+  75%{background-color: #fff275; border-radius: 50% 50% 50% 0; }
+  100%{background-color: #d5bbb1; border-radius: 50% 50% 50% 50%;}
+
+}
+
+
+
+
+
+/*@keyframes myanimation {
+  0% {background-color: white; border-radius: 0 0 0 0;}
+  25%{background-color: red; border-radius: 50% 0 0 0;}
+  50%{background-color: purple; border-radius: 50% 50% 0 0;}
+  75%{background-color: pink; border-radius: 50% 50% 50% 0; }
+  100%{background-color: yellow; border-radius: 50% 50% 50% 50%;}
+
+}
