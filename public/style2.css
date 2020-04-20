@@ -83,6 +83,19 @@ h2 {
   animation-fill-mode: forwards;
 
 }
+
+.box4  {
+  background: white;
+  width: 200px;
+  height: 200px;
+  margin:auto;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+}
 @keyframes myanimation {
   0% {background-color: #7366cc; border-radius: 0 0 0 0;}
   25%{background-color: #ff89d9; border-radius: 50% 0 0 0;}
