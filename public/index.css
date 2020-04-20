@@ -8,9 +8,22 @@ a:link,a:active,a:visited{
   padding: 10px 0px;
    box-shadow: 2px 2px grey;
    border:0.5px solid grey;
+   text-align: center;
 }
 a:hover{
   text-decoration: none;
   background-color: white;
 
+}
+.endstory{
+  width:90vw;
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.endstory iframe{
+  margin-bottom: 5px;
 }
