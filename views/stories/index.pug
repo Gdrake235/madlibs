@@ -1,7 +1,52 @@
 doctype html
 html(lang='en')
-  h1 stories
-
+  head
+    block styles
+      link(rel="stylesheet" type="text/css" href="/style.css")  
+        
+  body
+  h1 Stories
+  p
+  br
+  .
+   Mad Lib is an interactive story that you add words to. When prompted, you insert a specific type of word.
+  br
+  .
+   Once all words are added, the story is ready. The end story is usually quite funny.
+  br
+  .
+   Pick a topic below to be taken to an input page for that type of story.
+  p
+  br
+  .
+   Quick Review
+  
+    
+  
+  table#desc
+  #table-wrapper
+    tr
+      td(height='50px') ADJECTIVE: Describes something or somebody. 
+      td(height="50px") EXAMPLE: Lumpy, soft, ugly, messy, and short.
+  table#desc
+  #table-wrapper
+    tr      
+      td(height='100px') ADVERB: Tells how something is done. It modifies a verb and usually ends in "ly."
+      td(height="100px") EXAMPLE: Modestly, stupidly, greedily.
+  table#desc
+  #table-wrapper  
+    tr
+      td(height='100px') NOUN: Is the name of a person, place, or thing. 
+      td(height="100px") EXAMPLE: Pavement, umbrella, toy, bathtub, and nose.
+  table#desc
+  #table-wrapper  
+    tr
+      td(height='100px') VERB: Is an action word. Run, pitch, jump, and swim are verbs.
+      td(height="100px") EXAMPLE: Ran, pitched, jumped, and swam.
+  
   ul
     each story in stories
-     li: a(href=`/stories/${story.id}` class="title") #{story.title}
+      a(href=`/stories/${story.id}` class="title")
+        br
+        .
+           #{story.title}
