@@ -1,15 +1,15 @@
 doctype html
 html(lang='en')
+  include ../layout.pug
   block styles
     link(rel="stylesheet" type="text/css" href="/style.css")  
 body
-  h1 create a story
+  h1 Create your own story here!
   form(class='new_story_form',action='/stories/new', method='POST')
-    p
-
-      | title :
-      textarea(id='title_text',type='text', name='title', value='',required ) please input a title
-      |       content :
-      textarea(id='content_text',type='text', name='content', value='',cols='30',rows='20',required ) "I am a template i have [noun1], [noun2] but should never be the same"
-    
+    div
+     
+     textarea(id='title_text',type='text', name='title', value='',required ) please input a title
+    div 
+       
+     textarea(id='content_text',type='text', name='content', value='',cols='30',rows='20',required ) "I am a template i have [noun1], [noun2] but should never be the same"
     input(class='submit_story_button',type='submit', value='Submit')

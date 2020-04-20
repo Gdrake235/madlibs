@@ -9,15 +9,22 @@
   top:50%;
   left:1%;
   right:900px;
-  margin-right:50%
-  transform: translate(-50%, -50%)
+
 }
 
+a{
+  display: block;
+ width: 20%;
+ margin-top:10px;
+ text-align: center;
+
+}
 
 h2 {
   font-style: sans-serif;
+  text-shadow: 2px 1px black;
   font-size: 40px;
-  margin: 0;
+  margin: 0px;
   white-space: nowrap;
   position: absolute;
   top: 50%;
