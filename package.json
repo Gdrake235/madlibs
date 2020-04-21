@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.5",
     "cypress": "^4.4.0",
     "debug": "^4.1.1",
     "express": "^4.17.1",
@@ -22,6 +23,6 @@
     "nodemon": "^2.0.3",
     "pug": "^2.0.4",
     "pug-cli": "^1.0.0-alpha6",
-    "cookie-parser": "^1.4.5"
+    "request": "^2.88.2"
   }
 }

@@ -3,7 +3,7 @@ var router = express.Router();
 
 var StoriesController = require('../controllers/stories')
 
-router.get('/getRandom/:number', StoriesController.GetRandom);
+router.get('/getRandom/:number/:id', StoriesController.GetRandom);
 router.get('/new', StoriesController.CreateTemplate);
 router.post('/new',StoriesController.SubmitTemplate);
 router.get('/:id', StoriesController.GetStory);

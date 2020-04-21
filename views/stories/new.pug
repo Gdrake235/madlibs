@@ -8,8 +8,8 @@ body
     p
 
       | title :
-      textarea(id='title_text',type='text', name='title', value='',required ) please input a title
+      textarea(id='title_text',type='text', name='title', placeholder="please input a title", required )
       |       content :
-      textarea(id='content_text',type='text', name='content', value='',cols='30',rows='20',required ) "I am a template i have [noun1], [noun2] but should never be the same"
+      textarea(id='content_text',type='text', name='content',cols='30',rows='20', placeholder="I am a template i have [noun1], [noun2] but should never be the same", required )
     
     input(class='submit_story_button',type='submit', value='Submit')
