@@ -6,6 +6,7 @@ h1 fill out the fields
 br
 .
 form(action=`/stories/${story.id}` method="post")
+  a(href=`/stories/getRandom/${story.form.length}`)  random
   each field in story.form
     br
     label(for=field) #{field}
