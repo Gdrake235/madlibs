@@ -5,12 +5,18 @@ html(lang='en')
     link(rel="stylesheet" type="text/css" href="/style.css")  
 h1 fill out the fields 
 br
+if randomWords 
+  h2 randomWords exists
 .
 form(action=`/stories/${story.id}` method="post")
-  each field in story.form
+  a(href=`/stories/getRandom/${story.form.length}/${story.id}`)  random
+  each field, index in story.form
     br
-    label(for=field) #{field}
-
-    input(type="text" name=field id=field required)
+    if randomWords
+      label(for=field) #{field}
+      input(type="text" name=field id=field required value=`${randomWords[index]}`)
+    else
+      label(for=field) #{field}
+      input(type="text" name=field id=field required class="initial")
 
   input(type="submit" value="submit")
