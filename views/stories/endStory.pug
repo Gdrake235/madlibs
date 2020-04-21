@@ -3,7 +3,8 @@ doctype html
 html(lang='en')
   block styles
     link(rel="stylesheet" type="text/css" href="/style.css")  
-h1 #{story.endStory}
+h1 #{story.title}
+p(class='endstory' ) #{story.endStory.replace(/(\r\n|\n|\r)/gm, [<br/>])}
 
 
 <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fkoala-madlibs.herokuapp.com&layout=button&size=large&width=77&height=28&appId" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>

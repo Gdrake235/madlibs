@@ -60,3 +60,18 @@ textarea {
   display: inline-block;
   font-size: 16px;
 }
+
+p.endstory {
+  padding:10px;
+  width:250px;
+  font-size:14px;
+  margin:50px auto;
+  display:block;
+  border-radius:10px;
+  border:6px solid #556677;
+  background-color: white;
+  text-align: left;
+  text-orientation: sideways;
+  text-rendering: geometricPrecision;
+  writing-mode: horizontal-tb;
+}
