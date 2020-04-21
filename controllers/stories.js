@@ -1,4 +1,6 @@
 var Story = require("../model/story");
+var request = require('request');
+var url = "https://random-word-api.herokuapp.com/word?";
 
 var StoriesController = {
   Index: function(req, res) {
@@ -35,7 +37,16 @@ var StoriesController = {
       if (err) { throw err; }
       res.status(201).redirect('/stories');
   })
- }
+ }, 
+ GetRandom: function(req, res) {
+   url += `number=${req.params.number}`;
+   console.log(url)
+   request.get(url, function(error, response, body) {
+    body = body.match(/(?<=\[).+?(?=\])/)[0].split(',');
+    console.log('body:', body)
+    res.redirect('/stories/story',200, {id: req.params.id, randomWords: body});
+   });
+  }
 };
 
 function createEndStory(inputs, template){
