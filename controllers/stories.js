@@ -1,6 +1,5 @@
 var Story = require("../model/story");
 var request = require('request');
-var url = "https://random-word-api.herokuapp.com/word?";
 
 var StoriesController = {
   Index: function(req, res) {
@@ -12,7 +11,16 @@ var StoriesController = {
   GetStory: function(req, res) {
     Story.findById(req.params.id, function(err, story){
       if (err) {throw err}
-      res.render('stories/story', { story : story});
+      if (req.params.randomWords) {
+        randomWords = req.params.randomWords.slice(1, -1)
+                                            .split(',') 
+                                            .map(str => str = str.slice(1, -1));
+        res.render('stories/story', {
+          story: story, 
+          randomWords: randomWords
+        });
+      }
+      else { res.render('stories/story', { story : story}); }
     })
   },
   CreateStory: function(req, res) {
@@ -39,12 +47,11 @@ var StoriesController = {
   })
  }, 
  GetRandom: function(req, res) {
+   var url = "https://random-word-api.herokuapp.com/word?";
    url += `number=${req.params.number}`;
-   console.log(url)
    request.get(url, function(error, response, body) {
-    body = body.match(/(?<=\[).+?(?=\])/)[0].split(',');
-    console.log('body:', body)
-    res.redirect('/stories/story',200, {id: req.params.id, randomWords: body});
+    console.log(`Response from the api: ${body}`);
+    res.status(200).redirect(`/stories/${req.params.id}/${body}`);
    });
   }
 };

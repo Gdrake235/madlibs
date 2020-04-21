@@ -5,8 +5,6 @@ html(lang='en')
     link(rel="stylesheet" type="text/css" href="/style.css")  
 h1 fill out the fields 
 br
-if randomWords 
-  h2 randomWords exists
 .
 form(action=`/stories/${story.id}` method="post")
   a(href=`/stories/getRandom/${story.form.length}/${story.id}`)  random
