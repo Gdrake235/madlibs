@@ -43,7 +43,7 @@ var StoriesController = {
    console.log(url)
    request.get(url, function(error, response, body) {
     body = body.match(/(?<=\[).+?(?=\])/)[0].split(',');
-    console.log('body:', body);
+    console.log('body:', body)
     res.redirect('/stories/story',200, {id: req.params.id, randomWords: body});
    });
   }
