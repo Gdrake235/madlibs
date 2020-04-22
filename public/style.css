@@ -87,21 +87,62 @@ form {
 width: 100vw;
 margin: 0 auto;
 display:flex;
-text-align: center;
+text-align: left;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 
 }
 
+form input[type=submit]{
+  margin-top: 50px;
+  font-size: 1.1em;
+  width: 20vw;
+  color: black;
+  padding: 10px 0px;
+  box-shadow: 2px 2px grey;
+  border:0.5px solid grey;
+  text-align: center;
+  text-decoration: underline;
+  background-color: inherit;
+}
+
+form input[type=submit]:hover {
+  text-decoration: none;
+  background-color: white;
+}
+
+
+form a {
+  width: 20vw;
+}
+
+.fields {
+  width: 40vw;
+  margin-top: 5vh;
+  margin-left: 20vw;
+}
+
+.field {
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+
+.fields label {
+  align-self: flex-start;
+}
+
 p.endstory {
-  padding:10px;
-  width:250px;
+  padding: 10px;
+  width: 250px;
   font-size:14px;
-  margin:50px auto;
-  display:block;
-  border-radius:10px;
-  border:6px solid #556677;
+  margin: 50px auto;
+  display: block;
+  border-radius: 10px;
+  border: 6px solid #556677;
   background-color: white;
   text-align: left;
   text-orientation: sideways;

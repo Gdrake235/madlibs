@@ -8,13 +8,15 @@ br
 .
 form(action=`/stories/${story.id}` method="post")
   a(href=`/stories/getRandom/${story.form.length}/${story.id}`)  random
-  each field, index in story.form
-    br
-    if randomWords
-      label(for=field) #{field}
-      input(type="text" name=field id=field required value=`${randomWords[index]}`)
-    else
-      label(for=field) #{field}
-      input(type="text" name=field id=field required class="initial")
+  div(class="fields")
+    each field, index in story.form
+      br
+      div(class="field")
+        if randomWords
+          label(for=field) #{field}:
+          input(type="text" name=field id=field required value=`${randomWords[index]}`)
+        else
+          label(for=field) #{field}:
+          input(type="text" name=field id=field required class="initial")
 
   input(type="submit" value="submit")
