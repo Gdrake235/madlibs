@@ -41,9 +41,9 @@ html(lang='en')
   table#desc
   #table-wrapper  
     tr
-      td(height='100px') VERB: Is an action word. Run, pitch, jump, and swim are verbs.
+      td(height='100px') VERB:  Is an action word. Run, pitch, jump, and swim are verbs.
       td(height="100px") &nbsp;  EXAMPLE: Ran, pitched, jumped, and swam.
   
-  ul
+  ul 
     each story in stories
       a(href=`/stories/${story.id}` class="title") #{story.title}
