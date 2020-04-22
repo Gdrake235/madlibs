@@ -149,3 +149,13 @@ p.endstory {
   text-rendering: geometricPrecision;
   writing-mode: horizontal-tb;
 }
+
+.share {
+  position: fixed; 
+  padding: 20px; 
+  right: 20%;
+  top: 0%;
+}
+.share iframe {
+  margin-bottom: 10px;
+}
