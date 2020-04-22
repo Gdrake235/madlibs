@@ -20,7 +20,7 @@ var StoriesController = {
           randomWords: randomWords
         });
       }
-      else { res.render('stories/story', { story : story}); }
+      else { res.render('stories/story', { story : story, randomWords: false}); }
     })
   },
   CreateStory: function(req, res) {
