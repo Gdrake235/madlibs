@@ -2,15 +2,23 @@ doctype html
 html(lang='en')
   include ../layout.pug
   block styles
-    link(rel="stylesheet" type="text/css" href="/style.css")  
+    link(rel="stylesheet" type="text/css" href="/style.css") 
+    link(rel="stylesheet" type="text/css" href="/navbar.css")
+
+<div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/stories/new">Create</a>
+  <a href="/stories">Stories</a>
+</div>
 body
+
   h1 Create your own story here!
   form(class='new_story_form',action='/stories/new', method='POST')
     p
 
-      | title :
-      textarea(id='title_text',type='text', name='title', placeholder="please input a title", required )
-      |       content :
+      | Title :
+      textarea(id='title_text',type='text', name='title', placeholder="Please input a title", required )
+      |       Content :
       textarea(id='content_text',type='text', name='content',cols='30',rows='20', placeholder="I am a template i have [noun1], [noun2] but should never be the same", required )
     
-    input(class='submit_story_button',type='submit', value='Submit')
+    input(class='submit_story_button',id="create_submit" type='submit', value='Submit')

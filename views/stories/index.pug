@@ -3,7 +3,15 @@ html(lang='en')
   head 
   include ../layout.pug
   block styles
-    link(rel="stylesheet" type="text/css" href="/style.css")    
+   link(rel="stylesheet" type="text/css" href="/style.css")  
+   link(rel="stylesheet" type="text/css" href="/navbar.css")
+  
+<div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/stories/new">Create</a>
+  <a href="/stories">Stories</a>
+</div>
+
   body
   h1 Stories
   p

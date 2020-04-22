@@ -1,6 +1,7 @@
 body{
   position: relative;
   font-family: 'Libre Franklin', sans-serif;
+  margin-top: 0;
 }
 
 a:link,a:active,a:visited{
