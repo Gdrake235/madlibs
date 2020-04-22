@@ -4,11 +4,13 @@
   font-style: sans-serif;
   font-size: 20px;
   margin: 0;
+  margin-bottom: 100px;
   white-space: nowrap;
   position: absolute;
   top:50%;
   left:1%;
   right:900px;
+  padding-bottom: 20px;
 
 }
 
