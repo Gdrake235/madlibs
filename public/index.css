@@ -22,7 +22,7 @@ a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  overflow: scroll;
 }
 .endstory iframe{
   margin-bottom: 5px;
