@@ -7,9 +7,9 @@ body{
 a:link,a:active,a:visited{
   color: black;
   padding: 10px 0px;
-   box-shadow: 2px 2px grey;
-   border:0.5px solid grey;
-   text-align: center;
+  box-shadow: 2px 2px grey;
+  border:0.5px solid grey;
+  text-align: center;
 }
 a:hover{
   text-decoration: none;

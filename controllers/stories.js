@@ -53,6 +53,11 @@ var StoriesController = {
     console.log(`Response from the api: ${body}`);
     res.status(200).redirect(`/stories/${req.params.id}/${body}`);
    });
+  }, 
+  Clear: function(req, res) {
+    Story.findById(req.params.id, function(err, story){
+       res.render('stories/story', {story: story, randomWords: false}); 
+    }); 
   }
 };
 

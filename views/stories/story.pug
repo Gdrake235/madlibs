@@ -14,7 +14,8 @@ h1 fill out the fields
 br
 .
 form(action=`/stories/${story.id}` method="post")
-  a(href=`/stories/getRandom/${story.form.length}/${story.id}`)  random
+  a(href=`/stories/getRandom/${story.form.length}/${story.id}`)  Random
+  a(href=`/stories/clear/${story.id}` class="clear") Clear
   div(class="fields")
     each field, index in story.form
       br
